@@ -1,0 +1,30 @@
+body {
+    position: relative;
+    height: 100%;
+    background-image: url("https://snkrdunk.s3.ap-northeast-1.amazonaws.com/en/magazine/wp-content/uploads/2025/06/13110410/WEGO-BABYMONSTER-Asa-Ruka-Magazine-Keychain-7.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+div.left {
+    width: 25%;
+    height: 100vh;
+    margin: 1px 1px 1px 1px;
+}
+
+div.right {
+    width: 75%;
+    margin: 10px 0 10px 15px;
+    color: #ffffff;
+}
+
+th {
+    float: left;
+    font-size: 30px;
+}
