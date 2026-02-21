@@ -5,6 +5,144 @@
         <title>コンピュータサイエンスについて</title>
     </head>
     <body>
+        <p><a href="./home.html">戻る</a></p>
         <h1>コンピュータサイエンスについて</h1>
+        <h2>07-1:HTMLによる情報表現(1)</h2>
+        <p>こちら<a href="https://moocs.iniad.org/courses/2023/IE100/07-1/04">MOOCs</a>です。</p>
+        <p><strong>テキスト</strong>を強調する</p>
+        <p><em>こっち</em>のが弱い協調(ブラウザ上ではイタリック)</p>
+        <ul>
+            <li>順序のない箇条書き</li>
+            <li>a</li>
+        </ul>
+        <ol>
+            <li>順序のある箇条書き</li>
+            <li>a</li>
+        </ol>
+        <ul>
+            <li>a</li>
+            <li>
+                a
+                <ol>
+                    <li>a</li>
+                    <li>a</li>
+                </ol>
+            </li>
+        </ul>
+        <p>これは<a href="https://chatgpt.com/">ChatGPTのリンク</a>です。<br>分からないことは調べよう！</p>
+        <img src="https://kankoku-drama.com/files/user/ic2023120810180987654321.jpg" alt="BABYMONSTERの写真です。">
+        <h3>ソンガンの写真です。</h3>
+        <hr>
+        <h2>表</h2>
+        <table>
+            <tr>
+                <th>進捗\分野</th>
+                <th>Python</th>
+                <th colspan="2">HTML and CSS</th>
+                <th>statistics</th>
+            </tr>
+            <tr>
+                <th>完全性</th>
+                <td>70%</td>
+                <td>50%</td>
+                <td>35%</td>
+                <td>70%</td>
+            </tr>
+            <tr>
+                <th>感想</th>
+                <td>簡単</td>
+                <td>簡単</td>
+                <td>普通</td>
+                <td>まあ難しい</td>
+            </tr>
+            <tr>
+                <th>問題点</th>
+                <td>範囲外はNG</td>
+                <td>暗記不可</td>
+                <td>暗記不可</td>
+                <td>理解難</td>
+            </tr>
+            <tr>
+                <th rowspan="2">目標</th>
+                <td>完璧</td>
+                <td>範囲OK</td>
+                <td>範囲OK</td>
+                <td>完璧</td>
+            </tr>
+            <tr>
+                <td>問題簡単</td>
+                <td>簡潔なWeb</td>
+                <td>簡潔なデザイン</td>
+                <td>準1級</td>
+            </tr>
+        </table>
+        <h2>フォーム</h2>
+        <form>
+            <h3>ボタン</h3>
+            <button type="submit">データを送信(デフォ)</button>
+            <button type="reset">フォームをリセット</button>
+            <button type="button">何も行わない</button>
+            <h3>コントロール</h3>
+            <p>
+            <label for="id_name">Name:</label>
+            <input id="id_name" type="text">
+            </p>
+            <p>
+            <label for="id_password">Password:</label>
+            <input id="id_password" type="password">
+            </p>
+            <p>
+            <label for="id_email">Email:</label>
+            <input id="id_email" type="email">
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </p>
+            <p>
+                <input type="button" vlaue="NoSubmit">
+            </p>
+        </form>
+        <form>
+            <p>
+                <label for="id_checkbox1">Optional:初期値でチェックが入るようにしている</label>
+                <input id="id_checkbox1" type="checkbox" checked="checked">
+            </p>
+            <p>
+                <label for="id_checkbox2">Optiona2:初期値でチェックが入らないようにしている</label>
+                <input id="id_checkbox2" type="checkbox">
+            </p>
+            <p>
+                <label for="id_checkbox3">Optiona3:複数選択可または何も選ばない可</label>
+                <input id="id_checkbox3" type="checkbox">
+            </p>
+            <p>
+                <label for="id_radio1">Optional1:同じ名前のボタンがグループ化される</label>
+                <input id="id_radio1" name="options" type="radio">
+            </p>
+            <p>
+                <label for="id_radio2">Optional2:グループ化では、1つの選択肢しか選べない</label>
+                <input id="id_radio2" name="options" type="radio">
+            </p>
+            <p>
+                <label for="id_radio3">Optional3:for, id属性でどのボタンのことかを区別できる</label>
+                <input id="id_radio3" name="options" type="radio">
+            </p>
+            <p>
+                <input type="submit" name="Submit">
+                <input type="reset" name="Reset">
+            </p>
+            <p>name属性は、送信するときのデータの名前(キー)</p>
+        </form>
+        <form>
+            <h3>テキストエリア</h3>
+            <p>
+                <textarea rows="20" cols="70">デフォルトで書かれている文字</textarea>
+            </p>
+            <p>
+                <input type="submit" name="Submit">
+                <input type="reset" name="Reset">
+            </p>
+        </form>
     </body>
 </htnl>
